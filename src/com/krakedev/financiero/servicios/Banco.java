@@ -48,4 +48,14 @@ public class Banco {
         cuenta.setSaldoActual(cuenta.getSaldoActual() - monto);
         return true;
     }
+
+    public boolean transferir(double monto, Cuenta origen, Cuenta destino) {
+        boolean retiroExitoso = retirar(monto, origen);
+
+        if (!retiroExitoso) {
+            return false;
+        }
+
+        return depositar(monto, destino);
+    }
 }
