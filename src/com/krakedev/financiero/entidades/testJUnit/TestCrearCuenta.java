@@ -1,5 +1,4 @@
 package com.krakedev.financiero.entidades.testJUnit;
-
 import com.krakedev.financiero.entidades.Cliente;
 import com.krakedev.financiero.entidades.Cuenta;
 import com.krakedev.financiero.servicios.Banco;
@@ -8,7 +7,7 @@ import org.junit.jupiter.api.Test;
 
 import static org.junit.jupiter.api.Assertions.*;
 
-class TestBanco {
+class TestCrearCuenta {
 
     @Test
     void deberiaCrearCuentaConCodigoInicial() {
